@@ -1,7 +1,7 @@
 function CreateTodoButton() {
     return(
 
-        <button >Submit</button>
+        <button >+</button>
     );
 }
 

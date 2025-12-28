@@ -1,10 +1,10 @@
 
-function TodoItem() {
+function TodoItem({parrafo}) {
   return (
 
     <li>
       <span>V</span>
-      <p>ver curso platzi</p>
+      <p>{parrafo}</p>
       <span>X</span>
     </li>
   );
