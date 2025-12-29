@@ -1,0 +1,16 @@
+.TodoItem{
+    margin-right: auto;
+    
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    color: var(--text-main);
+   
+    
+    
+}
+
+
+.TodoItem.completed{
+    text-decoration: line-through;
+    color: var(--text-muted);
+}

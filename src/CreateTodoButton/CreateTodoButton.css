@@ -1,0 +1,38 @@
+.CreateTodoButton {
+  padding: 10px 16px;
+  border-radius: 10px;
+
+  border: none;
+  cursor: pointer;
+
+  background-color: var(--primary);
+  color: white;
+
+  font-size: 14px;
+  font-weight: 600;
+  font-family: var(--font-main);
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  transition: 
+    background-color 0.2s ease,
+    transform 0.1s ease,
+    box-shadow 0.1s ease;
+}
+
+.CreateTodoButton:hover {
+  background-color: #2563eb; /* azul un poco más oscuro */
+  box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+.CreateTodoButton:active {
+  transform: scale(0.97);
+}
+
+.CreateTodoButton:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+}
+

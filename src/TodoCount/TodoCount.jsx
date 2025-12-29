@@ -1,6 +1,8 @@
+import './TodoCount.css';
+
 function TodoCount({completed, total}) {
     return(
-        <h1>
+        <h1 >
             has {completed} de {total} tareas completadas
         </h1>
     );

@@ -1,0 +1,34 @@
+.TaskContainerMini {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+    gap: 8px;
+    margin-bottom: 10px;
+    
+    background-color: aquamarine;
+    
+    
+    padding: 0 20px ;
+    border-radius: 14px;
+
+
+
+    
+}
+
+.TaskContainerMini {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 14px;
+  border-radius: 10px;
+
+  background-color: #0f1c33;
+  transition: background 0.2s ease;
+}
+
+.TaskContainerMini:hover {
+  background-color: #142449;
+}

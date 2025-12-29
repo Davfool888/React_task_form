@@ -1,38 +1,36 @@
 
-import './App.css';
-import { TodoCount } from './TodoCount';
-import { TodoSearch } from './TodoSearch';
-import { TodoList } from './TodoList';
-import { TodoItem } from './TodoItem';
-import { CreateTodoButton } from './CreateTodoButton';
-import React from 'react';
+import { TodoCount } from './TodoCount/TodoCount';
+import { TodoSearch } from './TodoSearch/TodoSearch';
+import { TodoList } from './TodoList/TodoList';
 
-const defaultTodos = [
-  { text: 'cutting onion', completed: true },
-  { text: 'Design t-shirts', completed: true },
-  { text: 'Vender productos', completed: true },
-  { text: 'Actualizar Cv', completed: true },
-  { text: 'Actualizar Cvx', completed: true },
-]
+
+import { Container } from './Container/Container';
+
+
+import React from 'react';
+import { TaskContainer } from './TaskContainer/TaskContainer';
+import { NewTaske } from './NewTaske/NewTaske';
+
+
+
 
 
 function App() {
   return (
     <React.Fragment>
-      <TodoCount completed={3} total={5} />
-      <TodoSearch />
 
-      <TodoList>
-        {defaultTodos.map(todo => (
-          <TodoItem key={
-            todo.text}
-            parrafo={todo.text}
-            completed={todo.completed} />
+      <Container>
+        <TodoCount completed={3} total={5} />
+        <TodoSearch />
 
-        ))}
-      </TodoList >
+       <TodoList> 
+          <TaskContainer/>
+        </TodoList>
 
-      <CreateTodoButton />
+
+        <NewTaske/>
+      </Container>
+
 
     </React.Fragment>
   );
